@@ -28,7 +28,7 @@ services:
    
     volumes:
       # - ./gateway_backup.gwbk:/restore.gwbk
-      - nathan_DevBatch_data:/usr/local/bin/ignition/data
+      - ./nathan_DevBatch_data:/usr/local/bin/ignition/data
   
      
   
@@ -42,11 +42,5 @@ services:
       - MYSQL_DATABASE=ignition
       
     volumes:
-      - nathan_ignitionDevBatch_db:/var/lib/mysql
+      - ./nathan_ignitionDevBatch_db:/var/lib/mysql
     
-
-
-volumes: 
-  nathan_DevBatch_data:  
-  nathan_ignitionDevBatch_db: 
-  
