@@ -3,7 +3,7 @@ version: '3.4'
 
 services:
   nathan_DevBatch_gateway:
-    image: inductiveautomation/ignition:latest
+    image: inductiveautomation/ignition:8.1.12
     ports:
       - "12088:8088"
       - "12043:8043"
