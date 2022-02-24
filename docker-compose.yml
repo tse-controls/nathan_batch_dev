@@ -43,7 +43,17 @@ services:
       
     volumes:
       - nathan_ignitionDevBatch_db:/var/lib/mysql
-    
+
+
+  adminer_container:
+        image: adminer:latest
+        environment: 
+            ADMINER_DEFAULT_SERVER: nathan_ignitionDev_db
+            ADMINER_DESIGN: dracula # galkaev
+        ports: 
+          - 12080:8080
+
+
 volumes: 
   nathan_DevBatch_data:  
   nathan_ignitionDevBatch_db: 
